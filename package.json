@@ -1,11 +1,44 @@
 {
   "name": "typescript-biome-bun-zod-vitest",
-  "module": "src/index.ts",
+  "version": "1.0.0",
+  "description": "A boilerplate template for TypeScript development incorporating Bun, Biome, Zod, and Vitest.",
+  "main": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test-run": "vitest run",
+    "format": "bunx biome format --write ./src",
+    "lint": "bunx biome lint ./src",
+    "lint:fix": "bunx biome lint --write ./src",
+    "check": "bunx biome check --write ./src"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@biomejs/biome": "1.8.3",
+    "@types/bun": "1.1.9",
+    "vitest": "2.0.5"
   },
   "peerDependencies": {
     "typescript": "5.6.2"
-  }
+  },
+  "dependencies": {
+    "zod": "3.23.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:arucraft2022/typescript-biome-bun-zod-vitest.git"
+  },
+  "keywords": [
+    "typescript",
+    "bun",
+    "biome",
+    "zod",
+    "vitest",
+    "boilerplate"
+  ],
+  "author": "arucraft2022",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arucraft2022/typescript-biome-bun-zod-vitest/issues"
+  },
+  "homepage": "https://github.com/arucraft2022/typescript-biome-bun-zod-vitest#readme"
 }
